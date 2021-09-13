@@ -1,6 +1,7 @@
 package com.techreturners.exercise001;
 
 public class User {
+  //  public Object type;
     private String username;
     private String operatingSystem;
     private String type;
