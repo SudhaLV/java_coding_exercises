@@ -6,25 +6,18 @@ import java.util.Objects;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        String capStr = word.substring(0, 1).toUpperCase() + word.substring(1);
-        return capStr;
+        return word.substring(0, 1).toUpperCase() + word.substring(1);
     }
 
     public String generateInitials(String firstName, String lastName) {
 
        /* Using toUpperCase function on a character variable */
-
-        Character fname = Character.toUpperCase(firstName.charAt(0));
-        Character lname = Character.toUpperCase(lastName.charAt(0));
-        String Initials = fname +"." + lname;
-        return Initials;
+        return Character.toUpperCase(firstName.charAt(0)) +"." + Character.toUpperCase(lastName.charAt(0));
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        Double vat;
-        vat = (vatRate * originalPrice)/100;
-        Double finalPrice= originalPrice + vat;
 
+        Double finalPrice= originalPrice + (vatRate * originalPrice)/100;
         return Double.parseDouble(String.format("%.2f",finalPrice));
     }
 
